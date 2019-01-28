@@ -9,16 +9,16 @@ module.exports = {
             const fs = require('fs');
             const path = require('path');
     
-            const controllerPath = path.join(__dirname, `../../../app/api/controllers/${pluralize.singular(utils.convertPrimeiraLetra(name, false))}Controller.js`);
+            const controllerPath = path.join(`./app/api/controllers/${pluralize.singular(utils.convertPrimeiraLetra(name, false))}Controller.js`);
             const controllerGenerate = require('../../templates/controller');
     
-            const servicePath = path.join(__dirname, `../../../app/api/services/${pluralize.singular(utils.convertPrimeiraLetra(name, false))}Service.js`);
+            const servicePath = path.join(`./app/api/services/${pluralize.singular(utils.convertPrimeiraLetra(name, false))}Service.js`);
             const serviceGenerate = require('../../templates/service');
     
-            const boPath = path.join(__dirname, `../../../app/domain/business/${pluralize.singular(utils.convertPrimeiraLetra(name, false))}BO.js`);
+            const boPath = path.join(`./app/domain/business/${pluralize.singular(utils.convertPrimeiraLetra(name, false))}BO.js`);
             const boGenerate = require('../../templates/business');
     
-            const repositoryPath = path.join(__dirname, `../../../app/domain/repository/${pluralize.singular(utils.convertPrimeiraLetra(name, false))}Repository.js`);
+            const repositoryPath = path.join(`./app/domain/repository/${pluralize.singular(utils.convertPrimeiraLetra(name, false))}Repository.js`);
             const repositoryGenerate = require('../../templates/repository');
     
             if (!fs.existsSync(controllerPath) &&
