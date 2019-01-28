@@ -1,0 +1,19 @@
+{
+  "name": "jcb-api-cli",
+  "version": "1.0.0",
+  "description": "JCB API CLI facilita a criação de recursos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jeordane Carlos Batista",
+  "license": "ISC",
+  "bin": {
+    "jcbapi": "./bin/index.js"
+  },
+  "dependencies": {
+    "commander": "^2.19.0",
+    "pluralize": "^7.0.0"
+  }
+}
