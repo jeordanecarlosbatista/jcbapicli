@@ -1,14 +1,24 @@
 {
   "name": "jcb-api-cli",
   "version": "1.0.0",
+  "author": "Jeordane Carlos Batista",
   "description": "JCB API CLI facilita a criação de recursos",
+  "license": "MIT",
   "main": "index.js",
+  "homepage": "https://github.com/jeordanecarlosbatista/jcbapicli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeordanecarlosbatista/jcbapicli.git"
+  },
+  "engines": {
+    "node": ">=10.10"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Jeordane Carlos Batista",
-  "license": "ISC",
+  "keywords": [
+    "resource"
+  ],
   "bin": {
     "jcbapi": "./bin/index.js"
   },

@@ -28,6 +28,7 @@ module.exports = {
             fs.writeFileSync(servicePath, serviceGenerate.get(name), 'utf-8');
             fs.writeFileSync(boPath, boGenerate.get(name), 'utf-8');
             fs.writeFileSync(repositoryPath, repositoryGenerate.get(name), 'utf-8');
+            console.log("Arquivos gerados com sucesso!")
         }
     }
 }
