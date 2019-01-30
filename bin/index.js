@@ -3,7 +3,7 @@ const comandos = require('commander');
 const generateResource = require('./commands/generate/resource');
 
 comandos
-    .version('1.0.4')
+    .version('1.0.5')
     .description('A command line interface for Node.js API');
 
 comandos
