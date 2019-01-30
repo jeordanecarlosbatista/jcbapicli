@@ -4,8 +4,7 @@ const utils = require('../utils');
 
 module.exports = { 
     get: function(recurso) {
-        return `
-'use strict';
+        return `'use strict';
 const ${pluralize.singular(utils.convertPrimeiraLetra(recurso))}Service = require('../services/${pluralize.singular(utils.convertPrimeiraLetra(recurso, false))}Service');
 const service = new ${pluralize.singular(utils.convertPrimeiraLetra(recurso))}Service();
 

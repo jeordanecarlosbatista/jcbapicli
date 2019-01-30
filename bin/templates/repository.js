@@ -4,8 +4,7 @@ const utils = require('../utils');
 
 module.exports = { 
     get: function(recurso) {
-        return `
-'use strict';
+        return `'use strict';
 const MssqlFactory = require('../infrastructure/mssql');
 const CommonRepository = require('./commonRepository');
 const { Procedure } = require('../persistence/contract');
