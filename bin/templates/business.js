@@ -7,7 +7,7 @@ module.exports = {
         return `'use strict';
 const CommomBO = require('./commonBO');
 const ${pluralize.singular(utils.convertPrimeiraLetra(recurso))}Repository = require('../repository/${pluralize.singular(utils.convertPrimeiraLetra(recurso, false))}Repository');
-const ${pluralize.singular(utils.convertPrimeiraLetra(recurso))}DTO = require('../dto${pluralize.singular(utils.convertPrimeiraLetra(recurso))}DTO');
+const ${pluralize.singular(utils.convertPrimeiraLetra(recurso))}DTO = require('../${pluralize.singular(utils.convertPrimeiraLetra(recurso, false))}DTO');
 
 class ${pluralize.singular(utils.convertPrimeiraLetra(recurso))}BO extends CommomBO {
     constructor() {
