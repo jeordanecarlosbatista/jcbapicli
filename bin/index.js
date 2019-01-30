@@ -8,7 +8,7 @@ comandos
 
 comandos
     .command('generate <schematics> <name>')
-    .description('creates feature in controller, service, business and repository layers')
+    .description('creates feature in controller, service, business, dto and repository layers')
     .action(function (schematic, schematicName) {
 
         if (schematic === 'resource') {

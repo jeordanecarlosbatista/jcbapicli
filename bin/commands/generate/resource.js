@@ -20,15 +20,20 @@ module.exports = {
     
             const repositoryPath = path.join(`./app/domain/repository/${pluralize.singular(utils.convertPrimeiraLetra(name, false))}Repository.js`);
             const repositoryGenerate = require('../../templates/repository');
+
+            const dtoPath = path.join(`./app/domain/dto/${pluralize.singular(utils.convertPrimeiraLetra(name, false))}DTO.js`);
+            const dtoGenerate = require('../../templates/dto');
     
             if (!fs.existsSync(controllerPath) &&
                 !fs.existsSync(servicePath) &&
                 !fs.existsSync(boPath) &&
-                !fs.existsSync(repositoryPath)) {
+                !fs.existsSync(repositoryPath) &&
+                !fs.existsSync(dtoPath)) {
                 fs.writeFileSync(controllerPath, controllerGenerate.get(name), 'utf-8');
                 fs.writeFileSync(servicePath, serviceGenerate.get(name), 'utf-8');
                 fs.writeFileSync(boPath, boGenerate.get(name), 'utf-8');
                 fs.writeFileSync(repositoryPath, repositoryGenerate.get(name), 'utf-8');
+                fs.writeFileSync(dtoPath, dtoGenerate.get(), 'utf-8');
                 console.log("Arquivos gerados com sucesso!");
             }
             else {
