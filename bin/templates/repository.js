@@ -1,11 +1,11 @@
 
-const mssql = require('mssql');
 const pluralize = require('pluralize');
 const utils = require('../utils');
 
 module.exports = { 
     get: function(recurso) {
         return `'use strict';
+const mssql = require('mssql');
 const MssqlFactory = require('../infrastructure/mssql');
 const CommonRepository = require('./commonRepository');
 const { Procedure } = require('../persistence/contract');
