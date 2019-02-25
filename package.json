@@ -1,7 +1,7 @@
 {
   "name": "jcbapi",
-  "version": "1.0.6",
-  "author": "Jeordane Carlos Batista",
+  "version": "1.0.7",
+  "author": "Jeordne Carlos Batista",
   "description": "JCB API CLI facilita a criação de recursos",
   "license": "MIT",
   "main": "index.js",
