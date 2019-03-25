@@ -10,6 +10,7 @@ const HttpStatusCode = require('../helpers/httpStatusCode');
 const mssql = require('mssql');
 const MssqlFactory = require('../infrastructure/mssql');
 const CommonRepository = require('./commonRepository');
+const ProcedureException = require('../../api/exception/procedureException');
 const { Procedure } = require('../persistence/contract');
 
 class ${pluralize.singular(utils.convertPrimeiraLetra(recurso))}Repository extends CommonRepository {
